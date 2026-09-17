@@ -5,7 +5,13 @@
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
+const bgButtons = document.querySelectorAll("[data-bg]");
 
+bgButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.body.className = btn.dataset.bg;
+  });
+});
 
 // sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
