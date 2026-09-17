@@ -20,7 +20,44 @@
   /**
    * colors
    */
+  .top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0d1b2a;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    z-index: 1000;
+  }
+  .bg-ocean {
+    background: url('ocean.jpg') center/cover no-repeat fixed;
+  }
 
+  .bg-dark {
+    background: #0d1b2a;
+  }
+
+  .bg-light {
+    background: #f5f5f5;
+  }
+  body {
+    padding-top: 70px; /* prevents content from hiding under nav */
+  }
+
+  .top-nav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .top-nav button.active {
+    border-bottom: 2px solid #4cc9f0;
+  }
   /* gradient */
 
   --bg-gradient-onyx: linear-gradient(
